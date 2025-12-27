@@ -16,6 +16,6 @@ spec:
       - name: ecr-secret
       containers:
       - name: my-app
-        image: 759210286431.dkr.ecr.ap-south-1.amazonaws.com/my-repo:latest
+        image: 759210286431.dkr.ecr.ap-south-1.amazonaws.com/rushikesh0374/my-task-1-image:release_4
         ports:
         - containerPort: 8080
