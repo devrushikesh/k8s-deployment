@@ -19,3 +19,14 @@ spec:
         image: 759210286431.dkr.ecr.ap-south-1.amazonaws.com/rushikesh0374/my-task-1-image:release_4
         ports:
         - containerPort: 8080
+        env:
+          - name: MY_VAR_1
+            valueFrom:
+              configMapKeyRef:
+                name: my-config-map-data
+                key: key1
+          - name: MY_KEY_2
+            valueFrom:
+              configMapKeyRef:
+                name: my-config-map-data
+                key: key2
